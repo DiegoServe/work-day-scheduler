@@ -9,5 +9,8 @@ $(document).ready(function () {
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
 
+        // Save text in local storage
+        localStorage.setItem(time, text);
+
     })
 });
