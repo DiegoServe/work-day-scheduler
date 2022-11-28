@@ -11,6 +11,9 @@ $(document).ready(function () {
 
         // Save text in local storage
         localStorage.setItem(time, text);
-
     })
 });
+
+function timeTracker() {
+    //Get Current Number of Hours
+    var timeNow = moment().hour();
